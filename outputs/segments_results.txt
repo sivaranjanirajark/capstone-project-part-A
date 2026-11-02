@@ -1,0 +1,35 @@
+﻿===== RFM =====
+customers: 1175
+recency   median 19 min 0 max 180
+frequency mean 9.46 max 33
+monetary  mean 2552.06 max 14766.55
+
+===== K-means table =====
+ K  inertia  silhouette
+ 2   1820.8       0.465
+ 3   1268.2       0.445
+ 4    743.1       0.526
+ 5    617.4       0.480
+ 6    503.2       0.482
+ 7    408.5       0.416
+ 8    366.5       0.412
+
+===== Segment profile (K=4) =====
+            size  mean_recency  mean_frequency  mean_monetary
+segment_id                                                   
+0            436         28.86            3.77        1057.62
+1            138         24.12            6.77        7129.70
+2            419          8.77           19.40        3410.02
+3            182        109.04            2.20         685.99
+
+===== Names and actions =====
+ segment_id          segment_name  size                                             action
+          0     Occasional buyers   436 Nudge towards a second order with a small discount
+          1 Premium high spenders   138   VIP offers and early access to electronics deals
+          2        Loyal regulars   419         Loyalty points and basket-building bundles
+          3   At-risk, gone quiet   182               Win-back coupon and reminder message
+Premium segment id: 1 (cluster numbers are only labels, not an ordering)
+
+PCA explained variance: 0.634 0.218 total 0.852
+
+wrote outputs/customer_segments.csv: 1175 rows
