@@ -181,6 +181,7 @@ def resume_agent(run_id):
 # ------------------------------------------------------------------ demonstrations
 if __name__ == "__main__":
     for p in (RUNS, LEDGER):                    # fresh outputs so reruns are reproducible
+    
         p.unlink(missing_ok=True)
 
     scen = pd.read_csv("data/raw/agent_scenarios.csv", keep_default_na=False)
