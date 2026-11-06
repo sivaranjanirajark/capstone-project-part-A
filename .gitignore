@@ -2,9 +2,7 @@
 .venv/
 __pycache__/
 # Runtime state and logs
-state/
-outputs/agent_runs.jsonl
-outputs/refund_ledger.jsonl
+
 
 # Python / tooling
 *.pyc
